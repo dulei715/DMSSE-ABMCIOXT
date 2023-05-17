@@ -1,7 +1,7 @@
 package basictest;
 
-import cn.edu.hun.pisces.basestruct.Keyword;
-import cn.edu.hun.pisces.basestruct.KeywordComparator;
+import cn.edu.hun.leileidu.basestruct.Keyword;
+import cn.edu.hun.leileidu.basestruct.KeywordComparator;
 import org.junit.Test;
 
 import java.util.TreeSet;

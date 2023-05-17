@@ -1,9 +1,9 @@
 package otherstest;
 
-import cn.edu.hun.pisces.utils.Constant;
-import cn.edu.hun.pisces.utils.StringUtil;
-import cn.edu.hun.pisces.utils.cryptography.BilinearUtil;
-import cn.edu.hun.pisces.utils.cryptography.CryptoFunciton;
+import cn.edu.hun.leileidu.utils.Constant;
+import cn.edu.hun.leileidu.utils.StringUtil;
+import cn.edu.hun.leileidu.utils.cryptography.BilinearUtil;
+import cn.edu.hun.leileidu.utils.cryptography.CryptoFunciton;
 import it.unisa.dia.gas.jpbc.Element;
 import it.unisa.dia.gas.jpbc.Field;
 import org.junit.Test;

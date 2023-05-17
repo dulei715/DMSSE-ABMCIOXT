@@ -1,7 +1,7 @@
 package otherstest;
 
-import cn.edu.hun.pisces.utils.ioutil.MyPrint;
-import cn.edu.hun.pisces.utils.cryptography.HMAC;
+import cn.edu.hun.leileidu.utils.ioutil.MyPrint;
+import cn.edu.hun.leileidu.utils.cryptography.HMAC;
 import org.junit.Test;
 
 /**

@@ -1,12 +1,11 @@
 package experiment;
 
-import cn.edu.hun.pisces.experiment.utils.ExpUtil;
-import cn.edu.hun.pisces.utils.Constant;
-import cn.edu.hun.pisces.utils.ioutil.MyPrint;
+import cn.edu.hun.leileidu.experiment.utils.ExpUtil;
+import cn.edu.hun.leileidu.utils.Constant;
+import cn.edu.hun.leileidu.utils.ioutil.MyPrint;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.io.File;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
@@ -53,7 +52,7 @@ public class PreHandle {
             String clientPath = outFileClientList.get(i);
             String policyPath = outFilePolicyList.get(i);
 
-            cn.edu.hun.pisces.ospir_oxt.role.DataOwner ospirOXTDataOwner = new cn.edu.hun.pisces.ospir_oxt.role.DataOwner(BigInteger.ONE);
+            cn.edu.hun.leileidu.ospir_oxt.role.DataOwner ospirOXTDataOwner = new cn.edu.hun.leileidu.ospir_oxt.role.DataOwner(BigInteger.ONE);
 //            ospirOXTDataOwner.edbSetup(datasetStr);
             ospirOXTDataOwner.readDataFromFile(datasetStr);
             ospirOXTDataOwner.parseDataBase();
@@ -76,7 +75,7 @@ public class PreHandle {
             String clientsPath = outFileClientList.get(i);
             String privilegePath = outFilePrivilege.get(i);
 
-            cn.edu.hun.pisces.improved.advanced.role.DataOwner abmciOXTDataOwner = new cn.edu.hun.pisces.improved.advanced.role.DataOwner();
+            cn.edu.hun.leileidu.improved.advanced.role.DataOwner abmciOXTDataOwner = new cn.edu.hun.leileidu.improved.advanced.role.DataOwner();
             abmciOXTDataOwner.readDataFromFile(datasetStr);
             abmciOXTDataOwner.parseClients(true, clientsPath);
             abmciOXTDataOwner.parseDataBase();

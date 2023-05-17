@@ -1,6 +1,6 @@
 package usefultest;
 
-import cn.edu.hun.pisces.utils.cryptography.DifferentRandom;
+import cn.edu.hun.leileidu.utils.cryptography.DifferentRandom;
 import org.junit.Test;
 
 import java.math.BigInteger;

@@ -1,9 +1,7 @@
 package otherstest;
 
-import cn.edu.hun.pisces.utils.BigIntegerUtil;
-import cn.edu.hun.pisces.utils.Constant;
-import cn.edu.hun.pisces.utils.cryptography.BilinearUtil;
-import cn.edu.hun.pisces.utils.cryptography.CryptoFunciton;
+import cn.edu.hun.leileidu.utils.BigIntegerUtil;
+import cn.edu.hun.leileidu.utils.cryptography.BilinearUtil;
 import org.junit.Test;
 
 import java.math.BigInteger;

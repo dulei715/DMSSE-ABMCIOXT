@@ -1,6 +1,6 @@
 package improve.ospiroxt;
 
-import cn.edu.hun.pisces.utils.Constant;
+import cn.edu.hun.leileidu.utils.Constant;
 import org.junit.Test;
 
 import java.math.BigInteger;

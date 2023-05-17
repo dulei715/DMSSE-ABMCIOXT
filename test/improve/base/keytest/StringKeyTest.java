@@ -1,6 +1,6 @@
 package improve.base.keytest;
 
-import cn.edu.hun.pisces.improved.others.basestruct.key.StringKey;
+import cn.edu.hun.leileidu.improved.others.basestruct.key.StringKey;
 import org.junit.Test;
 
 /**

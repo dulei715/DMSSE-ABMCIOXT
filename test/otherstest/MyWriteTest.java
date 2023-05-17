@@ -1,10 +1,10 @@
 package otherstest;
 
-import cn.edu.hun.pisces.basestruct.Keyword;
-import cn.edu.hun.pisces.basestruct.TSetElement;
-import cn.edu.hun.pisces.related.role.DataOwner;
-import cn.edu.hun.pisces.related.basestruct.stag.Stag;
-import cn.edu.hun.pisces.utils.ioutil.MyWrite;
+import cn.edu.hun.leileidu.basestruct.Keyword;
+import cn.edu.hun.leileidu.basestruct.TSetElement;
+import cn.edu.hun.leileidu.related.role.DataOwner;
+import cn.edu.hun.leileidu.related.basestruct.stag.Stag;
+import cn.edu.hun.leileidu.utils.ioutil.MyWrite;
 import org.junit.Test;
 
 import java.io.File;

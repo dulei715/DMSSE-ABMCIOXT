@@ -1,8 +1,8 @@
 package improve.base.keytest;
 
-import cn.edu.hun.pisces.improved.others.basestruct.key.ByteKey;
-import cn.edu.hun.pisces.improved.others.basestruct.key.KeyAbstract;
-import cn.edu.hun.pisces.utils.Constant;
+import cn.edu.hun.leileidu.improved.others.basestruct.key.ByteKey;
+import cn.edu.hun.leileidu.improved.others.basestruct.key.KeyAbstract;
+import cn.edu.hun.leileidu.utils.Constant;
 import org.junit.Test;
 
 /**

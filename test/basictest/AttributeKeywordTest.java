@@ -1,6 +1,6 @@
 package basictest;
 
-import cn.edu.hun.pisces.ospir_oxt.basestruct.AttributeKeyword;
+import cn.edu.hun.leileidu.ospir_oxt.basestruct.AttributeKeyword;
 import org.junit.Test;
 
 /**

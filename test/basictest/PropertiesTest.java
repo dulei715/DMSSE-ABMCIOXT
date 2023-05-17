@@ -1,8 +1,8 @@
 package basictest;
 
-import cn.edu.hun.pisces.improved.others.utils.PrivilegeUtil;
-import cn.edu.hun.pisces.utils.Constant;
-import cn.edu.hun.pisces.utils.ioutil.MyPrint;
+import cn.edu.hun.leileidu.improved.others.utils.PrivilegeUtil;
+import cn.edu.hun.leileidu.utils.Constant;
+import cn.edu.hun.leileidu.utils.ioutil.MyPrint;
 import org.junit.Test;
 
 import java.util.List;

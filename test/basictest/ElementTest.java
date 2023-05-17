@@ -1,10 +1,6 @@
 package basictest;
 
-import cn.edu.hun.pisces.utils.Constant;
-import cn.edu.hun.pisces.utils.cryptography.BilinearUtil;
-import cn.edu.hun.pisces.utils.cryptography.CryptoFunciton;
-import com.sun.jna.Pointer;
-import it.unisa.dia.gas.jpbc.Element;
+import cn.edu.hun.leileidu.utils.cryptography.BilinearUtil;
 import it.unisa.dia.gas.jpbc.Field;
 import org.junit.Test;
 

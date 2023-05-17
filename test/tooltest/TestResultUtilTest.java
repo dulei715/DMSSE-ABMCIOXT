@@ -1,12 +1,12 @@
 package tooltest;
 
-import cn.edu.hun.pisces.basestruct.Keyword;
-import cn.edu.hun.pisces.basestruct.docfile.DocFile;
-import cn.edu.hun.pisces.related.basestruct.EDB;
-import cn.edu.hun.pisces.related.role.DataOwner;
-import cn.edu.hun.pisces.utils.KeywordUtil;
-import cn.edu.hun.pisces.utils.ioutil.MyPrint;
-import cn.edu.hun.pisces.utils.testutil.TestResultUtil;
+import cn.edu.hun.leileidu.basestruct.Keyword;
+import cn.edu.hun.leileidu.basestruct.docfile.DocFile;
+import cn.edu.hun.leileidu.related.basestruct.EDB;
+import cn.edu.hun.leileidu.related.role.DataOwner;
+import cn.edu.hun.leileidu.utils.KeywordUtil;
+import cn.edu.hun.leileidu.utils.ioutil.MyPrint;
+import cn.edu.hun.leileidu.utils.testutil.TestResultUtil;
 import org.junit.Test;
 
 import java.util.List;

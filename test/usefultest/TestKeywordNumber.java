@@ -1,10 +1,10 @@
 package usefultest;
 
-import cn.edu.hun.pisces.utils.Constant;
-import cn.edu.hun.pisces.utils.MapUtil;
-import cn.edu.hun.pisces.utils.fileutil.EmailKeywordSplitUtil;
-import cn.edu.hun.pisces.utils.fileutil.FileSplitUtil;
-import cn.edu.hun.pisces.utils.ioutil.MyPrint;
+import cn.edu.hun.leileidu.utils.Constant;
+import cn.edu.hun.leileidu.utils.MapUtil;
+import cn.edu.hun.leileidu.utils.fileutil.EmailKeywordSplitUtil;
+import cn.edu.hun.leileidu.utils.fileutil.FileSplitUtil;
+import cn.edu.hun.leileidu.utils.ioutil.MyPrint;
 import org.junit.Test;
 
 import java.io.*;

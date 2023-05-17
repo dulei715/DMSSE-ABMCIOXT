@@ -1,21 +1,21 @@
 package experiment;
 
-import cn.edu.hun.pisces.basestruct.Keyword;
-import cn.edu.hun.pisces.experiment.utils.ExpUtil;
-import cn.edu.hun.pisces.improved.advanced.basestruct.AdvXToken;
-import cn.edu.hun.pisces.improved.others.utils.ClientPolicyUtil;
-import cn.edu.hun.pisces.ospir_oxt.basestruct.AttributeKeyword;
-import cn.edu.hun.pisces.ospir_oxt.basestruct.BXToken;
-import cn.edu.hun.pisces.ospir_oxt.utils.ClientUtil;
-import cn.edu.hun.pisces.related.basestruct.EDB;
-import cn.edu.hun.pisces.related.basestruct.XToken;
-import cn.edu.hun.pisces.related.basestruct.stag.Stag;
-import cn.edu.hun.pisces.utils.KeyUtil;
-import cn.edu.hun.pisces.utils.KeywordUtil;
-import cn.edu.hun.pisces.utils.cryptography.BilinearUtil;
-import cn.edu.hun.pisces.utils.fileutil.EmailKeywordSplitUtil;
-import cn.edu.hun.pisces.utils.ioutil.MyWrite;
-import cn.edu.hun.pisces.utils.testutil.GenerateTokenTestUtil;
+import cn.edu.hun.leileidu.basestruct.Keyword;
+import cn.edu.hun.leileidu.experiment.utils.ExpUtil;
+import cn.edu.hun.leileidu.improved.advanced.basestruct.AdvXToken;
+import cn.edu.hun.leileidu.improved.others.utils.ClientPolicyUtil;
+import cn.edu.hun.leileidu.ospir_oxt.basestruct.AttributeKeyword;
+import cn.edu.hun.leileidu.ospir_oxt.basestruct.BXToken;
+import cn.edu.hun.leileidu.ospir_oxt.utils.ClientUtil;
+import cn.edu.hun.leileidu.related.basestruct.EDB;
+import cn.edu.hun.leileidu.related.basestruct.XToken;
+import cn.edu.hun.leileidu.related.basestruct.stag.Stag;
+import cn.edu.hun.leileidu.utils.KeyUtil;
+import cn.edu.hun.leileidu.utils.KeywordUtil;
+import cn.edu.hun.leileidu.utils.cryptography.BilinearUtil;
+import cn.edu.hun.leileidu.utils.fileutil.EmailKeywordSplitUtil;
+import cn.edu.hun.leileidu.utils.ioutil.MyWrite;
+import cn.edu.hun.leileidu.utils.testutil.GenerateTokenTestUtil;
 import it.unisa.dia.gas.jpbc.Element;
 import it.unisa.dia.gas.jpbc.Field;
 import org.junit.Before;
@@ -42,35 +42,35 @@ public class ExperimentPartTest2 {
     public List<String> outFileNameList = new ArrayList<>();
     public String outDirName = "F:\\Users\\Administrator\\IdeaProjects\\OXTImprovedataset\\out_reverse_index\\";
 
-    cn.edu.hun.pisces.related.role.DataOwner dataOwnerOXT = null;
+    cn.edu.hun.leileidu.related.role.DataOwner dataOwnerOXT = null;
 
-    cn.edu.hun.pisces.ospir_oxt.role.DataOwner dataOwnerOSPIROXT = null;
+    cn.edu.hun.leileidu.ospir_oxt.role.DataOwner dataOwnerOSPIROXT = null;
 
-    cn.edu.hun.pisces.improved.basic.role.DataOwnerParallel dataOwnerParallelBMCIOXT = null;
+    cn.edu.hun.leileidu.improved.basic.role.DataOwnerParallel dataOwnerParallelBMCIOXT = null;
 
-    cn.edu.hun.pisces.improved.basic.role.DataOwner dataOwnerBMCIOXT = null;
+    cn.edu.hun.leileidu.improved.basic.role.DataOwner dataOwnerBMCIOXT = null;
 
-    cn.edu.hun.pisces.improved.advanced.role.DataOwner dataOwnerAMCIOXT = null;
+    cn.edu.hun.leileidu.improved.advanced.role.DataOwner dataOwnerAMCIOXT = null;
 
     //client
 
-    cn.edu.hun.pisces.related.role.Client clientOXT = null;
+    cn.edu.hun.leileidu.related.role.Client clientOXT = null;
 
-    cn.edu.hun.pisces.ospir_oxt.role.Client clientOSPIROXT = null;
+    cn.edu.hun.leileidu.ospir_oxt.role.Client clientOSPIROXT = null;
 
-    cn.edu.hun.pisces.improved.basic.role.Client clientBMCIOXT = null;
+    cn.edu.hun.leileidu.improved.basic.role.Client clientBMCIOXT = null;
 
-    cn.edu.hun.pisces.improved.advanced.role.Client clientAMCIOXT = null;
+    cn.edu.hun.leileidu.improved.advanced.role.Client clientAMCIOXT = null;
 
 
     //server
-    cn.edu.hun.pisces.related.role.Server serverOXT = null;
+    cn.edu.hun.leileidu.related.role.Server serverOXT = null;
 
-    cn.edu.hun.pisces.ospir_oxt.role.Server serverOSPIROXT = null;
+    cn.edu.hun.leileidu.ospir_oxt.role.Server serverOSPIROXT = null;
 
-    cn.edu.hun.pisces.improved.basic.role.Server serverBMCIOXT = null;
+    cn.edu.hun.leileidu.improved.basic.role.Server serverBMCIOXT = null;
 
-    cn.edu.hun.pisces.improved.advanced.role.Server serverAMCIOXT = null;
+    cn.edu.hun.leileidu.improved.advanced.role.Server serverAMCIOXT = null;
 
 
 
@@ -90,13 +90,13 @@ public class ExperimentPartTest2 {
             outFileNameList.add(outDirName + "dataset_out_" + i + ".txt");
         }
 
-        serverOXT = new cn.edu.hun.pisces.related.role.Server();
+        serverOXT = new cn.edu.hun.leileidu.related.role.Server();
 
-        serverOSPIROXT = new cn.edu.hun.pisces.ospir_oxt.role.Server();
+        serverOSPIROXT = new cn.edu.hun.leileidu.ospir_oxt.role.Server();
 
-        serverBMCIOXT = new cn.edu.hun.pisces.improved.basic.role.Server();
+        serverBMCIOXT = new cn.edu.hun.leileidu.improved.basic.role.Server();
 
-        serverAMCIOXT = new cn.edu.hun.pisces.improved.advanced.role.Server();
+        serverAMCIOXT = new cn.edu.hun.leileidu.improved.advanced.role.Server();
 
 
 
@@ -104,11 +104,11 @@ public class ExperimentPartTest2 {
 
     public Object getClient(String name, String clientPath, String pPath){
         if(name.equals("oxt")){
-            return new cn.edu.hun.pisces.related.role.Client();
+            return new cn.edu.hun.leileidu.related.role.Client();
         }
         if(name.equals("ospir-oxt")){
             String clientID = ClientUtil.getMostPowerfulClientIDFromPolicyFile(pPath);
-            return new cn.edu.hun.pisces.ospir_oxt.role.Client(new BigInteger(clientID));
+            return new cn.edu.hun.leileidu.ospir_oxt.role.Client(new BigInteger(clientID));
         }
         if(name.equals("bmci-oxt")){
             return ClientPolicyUtil.getBasicPowerfulClientByPrivilege(clientPath, pPath);
@@ -134,7 +134,7 @@ public class ExperimentPartTest2 {
     }
 
 
-    public void initServers(EDB edbOXT, EDB edbOSPIROXT, EDB edbBMCIOXT, cn.edu.hun.pisces.improved.advanced.basestruct.EDB edbAMCIOXT) {
+    public void initServers(EDB edbOXT, EDB edbOSPIROXT, EDB edbBMCIOXT, cn.edu.hun.leileidu.improved.advanced.basestruct.EDB edbAMCIOXT) {
         this.serverOXT.setTset(edbOXT.getTset());
         this.serverOXT.setXset(edbOXT.getXset());
 
@@ -149,23 +149,23 @@ public class ExperimentPartTest2 {
     }
 
     private void initOXTDataOwner(){
-        this.dataOwnerOXT = new cn.edu.hun.pisces.related.role.DataOwner();
+        this.dataOwnerOXT = new cn.edu.hun.leileidu.related.role.DataOwner();
     }
 
     private void initOSPIROXTDataOwner(){
-        this.dataOwnerOSPIROXT = new cn.edu.hun.pisces.ospir_oxt.role.DataOwner(BigInteger.ONE);
+        this.dataOwnerOSPIROXT = new cn.edu.hun.leileidu.ospir_oxt.role.DataOwner(BigInteger.ONE);
     }
 
     private void initBMCIOXTDataOwnerParallel(){
-        this.dataOwnerParallelBMCIOXT = new cn.edu.hun.pisces.improved.basic.role.DataOwnerParallel();
+        this.dataOwnerParallelBMCIOXT = new cn.edu.hun.leileidu.improved.basic.role.DataOwnerParallel();
     }
 
     private void initBMCIOXTDataOwner(){
-        this.dataOwnerBMCIOXT = new cn.edu.hun.pisces.improved.basic.role.DataOwner();
+        this.dataOwnerBMCIOXT = new cn.edu.hun.leileidu.improved.basic.role.DataOwner();
     }
 
     private void initAMCIOXTDataOwner(){
-        this.dataOwnerAMCIOXT = new cn.edu.hun.pisces.improved.advanced.role.DataOwner();
+        this.dataOwnerAMCIOXT = new cn.edu.hun.leileidu.improved.advanced.role.DataOwner();
     }
 
 
@@ -199,7 +199,7 @@ public class ExperimentPartTest2 {
         EDB edbOXT = null;
         EDB edbOSPIROXT = null;
         EDB edbBMCIOXT = null;
-        cn.edu.hun.pisces.improved.advanced.basestruct.EDB edbAMCIOXT = null;
+        cn.edu.hun.leileidu.improved.advanced.basestruct.EDB edbAMCIOXT = null;
 
         //TODO: AMCI-TEST-1
         List<Keyword> totalKeywordList = null;
@@ -257,7 +257,7 @@ public class ExperimentPartTest2 {
         }
 
         //TODO: AMCI-TEST-3
-        dataOwnerAMCIOXT = new cn.edu.hun.pisces.improved.advanced.role.DataOwner();
+        dataOwnerAMCIOXT = new cn.edu.hun.leileidu.improved.advanced.role.DataOwner();
         Set<Keyword> keywordSet = new HashSet<>(totalKeywordList);
         Map<String, List<byte[]>> keysFromFile = KeyUtil.getKeysFromFile(abmciOXTKeyPath);
         Map<Keyword, byte[]> skkt = dataOwnerAMCIOXT.constructMultiKey(keywordSet, "kt", keysFromFile);
@@ -267,7 +267,7 @@ public class ExperimentPartTest2 {
         byte[] skki = dataOwnerAMCIOXT.constructSingleKey("ki", keysFromFile);
 
         //TODO: OSPIR-TEST-1
-        dataOwnerOSPIROXT = new cn.edu.hun.pisces.ospir_oxt.role.DataOwner(BigInteger.ONE);
+        dataOwnerOSPIROXT = new cn.edu.hun.leileidu.ospir_oxt.role.DataOwner(BigInteger.ONE);
         List<String> keywordValueList = KeywordUtil.toKeywordValueList(totalKeywordList);
         dataOwnerOSPIROXT.initializeAttribute(new HashSet<>(keywordValueList));
         dataOwnerOSPIROXT.selectKey(false,ospirOXTKeyPath);
@@ -276,10 +276,10 @@ public class ExperimentPartTest2 {
         /**
          * 初始化client
          */
-        clientOXT = (cn.edu.hun.pisces.related.role.Client)this.getClient("oxt", "", "");
-        clientOSPIROXT = (cn.edu.hun.pisces.ospir_oxt.role.Client)this.getClient("ospir-oxt", ospirOXTClientPath, ospirOXTPolicyPath);
-        clientBMCIOXT = (cn.edu.hun.pisces.improved.basic.role.Client)this.getClient("bmci-oxt", abmciOXTClientPath, abmciOXTPrivilegePath);
-        clientAMCIOXT = (cn.edu.hun.pisces.improved.advanced.role.Client)this.getClient("amci-oxt", abmciOXTClientPath, abmciOXTPrivilegePath);
+        clientOXT = (cn.edu.hun.leileidu.related.role.Client)this.getClient("oxt", "", "");
+        clientOSPIROXT = (cn.edu.hun.leileidu.ospir_oxt.role.Client)this.getClient("ospir-oxt", ospirOXTClientPath, ospirOXTPolicyPath);
+        clientBMCIOXT = (cn.edu.hun.leileidu.improved.basic.role.Client)this.getClient("bmci-oxt", abmciOXTClientPath, abmciOXTPrivilegePath);
+        clientAMCIOXT = (cn.edu.hun.leileidu.improved.advanced.role.Client)this.getClient("amci-oxt", abmciOXTClientPath, abmciOXTPrivilegePath);
 
 
         /**

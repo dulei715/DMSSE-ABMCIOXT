@@ -1,9 +1,9 @@
 package basictest;
 
-import cn.edu.hun.pisces.basestruct.TSetElement;
-import cn.edu.hun.pisces.related.basestruct.stag.IntegerStag;
-import cn.edu.hun.pisces.related.basestruct.stag.Stag;
-import cn.edu.hun.pisces.related.basestruct.stag.StringStag;
+import cn.edu.hun.leileidu.basestruct.TSetElement;
+import cn.edu.hun.leileidu.related.basestruct.stag.IntegerStag;
+import cn.edu.hun.leileidu.related.basestruct.stag.Stag;
+import cn.edu.hun.leileidu.related.basestruct.stag.StringStag;
 import org.junit.Test;
 
 import java.math.BigInteger;

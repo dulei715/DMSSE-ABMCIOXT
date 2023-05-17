@@ -1,14 +1,13 @@
 package basictest;
 
-import cn.edu.hun.pisces.utils.Constant;
-import cn.edu.hun.pisces.utils.cryptography.BilinearUtil;
-import cn.edu.hun.pisces.utils.cryptography.Hash;
+import cn.edu.hun.leileidu.utils.Constant;
+import cn.edu.hun.leileidu.utils.cryptography.BilinearUtil;
+import cn.edu.hun.leileidu.utils.cryptography.Hash;
 import it.unisa.dia.gas.jpbc.*;
 import it.unisa.dia.gas.plaf.jpbc.field.gt.GTFiniteElement;
 import it.unisa.dia.gas.plaf.jpbc.pairing.PairingFactory;
 import it.unisa.dia.gas.plaf.jpbc.pairing.a.TypeACurveGenerator;
 import it.unisa.dia.gas.plaf.jpbc.pairing.a1.TypeA1CurveGenerator;
-import it.unisa.dia.gas.plaf.jpbc.pbc.curve.PBCTypeACurveGenerator;
 import it.unisa.dia.gas.plaf.jpbc.pbc.curve.PBCTypeDCurveGenerator;
 import org.junit.Test;
 
